@@ -1,0 +1,18 @@
+<h1>User detail</h1>
+<div class="profil">
+    <img width="128" height="128" src="{{user.picture | poster}}" alt="user picture" class="img-rounded">
+    <div class="infos">
+        <ul>
+            <li><span>name: </span>{{user.name}}</li>
+            <li><span>age: </span>{{user.age}}</li>
+            <li><span>gender: </span>{{user.gender}}</li>
+            <li><span>email: </span>{{user.email}}</li>
+            <li><span>company: </span>{{user.company}}</li>
+            <li><span>phone: </span>{{user.phone}}</li>
+        </ul>
+        <p class="about">{{user.about}}</p>
+    </div>
+    <div class="actions">
+      <user-buttons size="md" key="{{user.key}}"/>
+    </div>
+</div>

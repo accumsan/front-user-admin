@@ -1,0 +1,32 @@
+{
+  "global": {
+    "title" : "Front-app fr",
+    "header": "Administration d'utilisateurs",
+    "all": "Tous",
+    "home" : "Accueil"
+  },
+  "home": {
+    "title": "Administration d'utilisateurs"
+  },
+  "users": {
+    "addtest": "Ajouter utilisateurs de test"
+  },
+
+
+  "dictionary" : {
+    "filter":"Filtre",
+    "action":"Action",
+    "actions":"Actions",
+    "email":"Email",
+    "id":"Id",
+    "name" : "Nom",
+    "company" : "Société",
+    "add" : "Ajouter",
+    "save" : "Sauvegarder",
+    "modify": "Modifier",
+    "send":"Envoyer",
+    "users.found" : "utilisateurs trouvés",
+    "password": "Mot de passe",
+    "address":"Adresse"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "global": {
+    "title" : "Front-app en",
+    "header": "Users Admin",
+    "all": "All users",
+    "home" : "Home"
+  },
+  "home": {
+    "title": "Users Administration"
+  },
+  "users": {
+    "addtest": "Add test users"
+  },
+  "dictionary" : {
+    "filter":"Filter",
+    "action":"Action",
+    "actions":"Actions",
+    "email":"Email",
+    "id":"Id",
+    "name" : "Name",
+    "company" : "Company",
+    "add" : "Add",
+    "save" : "Save",
+    "modify": "Modify",
+    "send":"Send",
+    "users.found" : "users found",
+    "address":"Address"
+  }
+}

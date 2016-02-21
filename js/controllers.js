@@ -16,16 +16,22 @@ myAdminApp.controller("usersController" ,function ($scope, Users, DataUsers, $q)
       $scope.users = Users.getUsers()
     })
   }
-  fetch()
-  $scope.addtest = function() {
-    var promises= []
-    DataUsers.get().forEach(function (user, index, ar){
-      promises.push(Users.create(user))
-    })
-    $q.all(promises).then(function(res) {
+  var dataUsers = DataUsers.get()
+  var dataUsersSize = dataUsers.length
+  var addTestWithIndex = function(index) {
+    console.log('addTestWithIndex : ' + index)
+    if (index >= dataUsersSize) {
       fetch()
-    })
+    } else {
+      Users.create(dataUsers[index]).then(function() {
+        addTestWithIndex(index+1)
+      })
+    }
   }
+  $scope.addtest = function() {
+    addTestWithIndex(0)
+  }
+  fetch()
 })
 
 myAdminApp.controller("editUserController" ,function ($scope, Users, $routeParams, $location) {

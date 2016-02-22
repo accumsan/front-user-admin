@@ -20,12 +20,12 @@
     "email":"Email",
     "id":"Id",
     "name" : "Nom",
-    "company" : "Société",
+    "company" : "Soci\u00E9t\u00E9",
     "add" : "Ajouter",
     "save" : "Sauvegarder",
     "modify": "Modifier",
     "send":"Envoyer",
-    "users.found" : "utilisateurs trouvés",
+    "users.found" : "utilisateurs trouv\u00E9s",
     "password": "Mot de passe",
     "address":"Adresse"
   }

@@ -1,12 +1,12 @@
 {
   "global": {
     "title" : "Front-app fr",
-    "header": "Administration d'utilisateurs",
-    "all": "Tous",
+    "header": "Front-end",
+    "all": "Tous utilisateurs",
     "home" : "Accueil"
   },
   "home": {
-    "title": "Administration d'utilisateurs"
+    "title": "Application Front-end"
   },
   "users": {
     "addtest": "Ajouter utilisateurs de test"

@@ -1,12 +1,12 @@
 {
   "global": {
     "title" : "Front-app en",
-    "header": "Users Admin",
+    "header": "Front-end",
     "all": "All users",
     "home" : "Home"
   },
   "home": {
-    "title": "Users Administration"
+    "title": "Front-end Application"
   },
   "users": {
     "addtest": "Add test users"

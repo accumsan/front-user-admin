@@ -24,8 +24,12 @@ myAdminApp.config(['$routeProvider', '$translateProvider',
             templateUrl: 'partials/users/edit.html',
             controller: 'addUserController'
         })
-        .when('/help', {
-            templateUrl: 'partials/consignes.html'
+        .when('/comments', {
+            templateUrl: 'partials/comments/comments.html'
+        })
+        .when('/comments/:id', {
+            templateUrl: 'partials/comments/room.html',
+            controller: 'CommentsCtrl'
         })
         .otherwise({
             redirectTo: '/home'

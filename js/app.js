@@ -1,6 +1,6 @@
 "use strict";
 
-var myAdminApp = angular.module('myAdminApp', ['ngRoute', 'pascalprecht.translate', 'ngCookies']);
+var myAdminApp = angular.module('myAdminApp', ['ngRoute', 'pascalprecht.translate', 'ngCookies', 'ngTable']);
 
 myAdminApp.config(['$routeProvider', '$translateProvider',
   function($routeProvider, $translateProvider) {

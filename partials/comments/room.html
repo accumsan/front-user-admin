@@ -10,10 +10,12 @@
 </div>
 <div class="row">
     <h4>Room {{id}}</h4>
-    <table class="table table-striped">
+    <table ng-table="ngTable" class="table table-striped" show-filter="true">
         <tbody>
-        <tr ng-repeat="comment in comments">
-            <td>{{comment.name}} : {{comment.message}}</td>
+        <tr ng-repeat="comment in $data">
+            <td title="'Name'" filter="{ name: 'text'}" sortable="'name'">{{comment.name}}</td>
+            <td title="'Date'" filter="{ date: 'text'}" sortable="'date'">{{comment.date}}</td>
+            <td title="'Message'" filter="{ message: 'text'}">{{comment.name}} : {{comment.message}}</td>
         </tr>
         </tbody>
     </table>

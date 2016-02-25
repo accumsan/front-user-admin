@@ -10,6 +10,7 @@
     "angular-cookies" : "~1.5.0",
     "angular-translate" : "~2.9.1",
     "angular-translate-storage-cookie" : "~2.9.1",
-    "angular-translate-loader-static-files" : "~2.9.1"
+    "angular-translate-loader-static-files" : "~2.9.1",
+    "ng-table": "~1.0.0"
   }
 }

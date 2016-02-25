@@ -1,7 +1,7 @@
 <div class="row">
     <form class="form-inline" role="form">
         <div class="form-group">
-            <input id="search" type="text" class="form-control" placeholder="..." ng-model="searchText">
+            <input ng-if="users.length" id="search" type="text" class="form-control" placeholder="..." ng-model="searchText">
             <button ng-if="!users.length" ng-click="addtest()" class="btn btn-md btn-default" translate="users.addtest">Add test users</button>
             <a class="btn btn-md btn-default" ng-href="#/users/add" translate="dictionary.add">Ajouter</a>
         </div>

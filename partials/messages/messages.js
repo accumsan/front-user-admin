@@ -10,10 +10,15 @@ app.service("Messages", function($q, $timeout) {
     service.SOCKET_URL = "http://localhost:8080/chat";
     service.CHAT_TOPIC = "/topic/message";
     service.CHAT_BROKER = "/app/chat";
+    service.CHAT_RANDOM = "/app/random";
 
     service.receive = function() {
       return listener.promise;
     };
+
+    service.random = function() {
+        socket.stomp.send(service.CHAT_RANDOM);
+    }
 
     service.send = function(message) {
       var id = Math.floor(Math.random() * 1000000);

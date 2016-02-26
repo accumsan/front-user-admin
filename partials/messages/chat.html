@@ -4,10 +4,11 @@
             <input type="text" class="form-control" placeholder="Compose a new message..." ng-model="message" />
         </div>
         <button class="btn btn-primary" ng-click="addMessage()" ng-disabled="message.length > max || message.length === 0">Send</button>
+        <button class="btn btn-default" ng-click="random()">Random</button>
     </div>
 
 </div>
-<div class="well well-sm">
+<div class="well well-sm" ng-show="messages.length">
 <p ng-repeat="message in messages | orderBy:'time':true" class="message">
     <time ng-class="{'text-primary': message.self}">{{message.time | date:'HH:mm'}}</time>
     <span ng-class="{'text-primary': message.self}">{{message.message}}</span>

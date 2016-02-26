@@ -10,6 +10,10 @@ app.controller("ChatCtrl" ,function ($scope, Messages) {
         $scope.message = "";
     };
 
+    $scope.random = function() {
+        Messages.random()
+    };
+
     Messages.receive().then(null, null, function(message) {
         $scope.messages.push(message);
     });

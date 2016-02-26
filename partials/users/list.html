@@ -1,13 +1,11 @@
-<div class="row">
-    <form class="form-inline" role="form">
-        <div class="form-group">
-            <input ng-if="users.length" id="search" type="text" class="form-control" placeholder="..." ng-model="searchText">
-            <button ng-if="!users.length" ng-click="addtest()" class="btn btn-md btn-default" translate="users.addtest">Add test users</button>
-            <a class="btn btn-md btn-default" ng-href="#/users/add" translate="dictionary.add">Ajouter</a>
-        </div>
-    </form>
-</div>
-<div class="row" ng-if="users.length > 0">
+<form class="form-inline" role="form">
+    <div class="form-group">
+        <input ng-if="users.length" id="search" type="text" class="form-control" placeholder="..." ng-model="searchText">
+        <button ng-if="!users.length" ng-click="addtest()" class="btn btn-md btn-default" translate="users.addtest">Add test users</button>
+        <a class="btn btn-md btn-default" ng-href="#/users/add" translate="dictionary.add">Ajouter</a>
+    </div>
+</form>
+<div ng-if="users.length > 0">
   <h4 style="margin-top:10px" class="page-header">{{users.length}} {{'dictionary.users.found' | translate}}</h4>
   <div class="table-responsive">
       <table class="table table-striped">

@@ -1,6 +1,6 @@
 "use strict"
 
-myAdminApp.controller("CommentsCtrl" ,function ($scope, Comments, $routeParams, NgTableParams) {
+app.controller("CommentsCtrl" ,function ($scope, Comments, $routeParams, NgTableParams) {
     var id = $routeParams.id
     var comments = []
     $scope.ngTable = new NgTableParams({}, {dataset: comments});

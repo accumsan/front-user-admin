@@ -1,6 +1,6 @@
 "use strict"
 
-myAdminApp.factory("Comments", function ($http) {
+app.factory("Comments", function ($http) {
     var API_COMMENT = 'http://localhost:8080/comment'
     return {
         subscribe : function(id, callback) {

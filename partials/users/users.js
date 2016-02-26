@@ -1,6 +1,6 @@
 "use strict"
 
-myAdminApp.factory("Users", function ($http) {
+app.factory("Users", function ($http) {
     var API_USER = 'http://localhost:8080/api/user'
     var users = []
     var user

@@ -1,0 +1,15 @@
+<div class="row">
+    <div class="form-group">
+        <div class="col-md-10 col-lg-6">
+            <input type="text" class="form-control" placeholder="Compose a new message..." ng-model="message" />
+        </div>
+        <button class="btn btn-primary" ng-click="addMessage()" ng-disabled="message.length > max || message.length === 0">Send</button>
+    </div>
+
+</div>
+<div class="well well-sm">
+<p ng-repeat="message in messages | orderBy:'time':true" class="message">
+    <time>{{message.time | date:'HH:mm'}}</time>
+    <span ng-class="{self: message.self}">{{message.message}}</span>
+</p>
+</div>

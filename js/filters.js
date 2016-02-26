@@ -1,6 +1,6 @@
 "use strict";
 
-myAdminApp.filter('poster', function () {
+app.filter('poster', function () {
     return function(posterUrl) {
         if(!posterUrl){
             return "images/Icon-user.png"

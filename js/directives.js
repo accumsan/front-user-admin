@@ -1,6 +1,6 @@
 "use strict";
 
-myAdminApp.directive('userButtons', function(){
+app.directive('userButtons', function(){
     return {
         restrict : 'E',
         replace : true,

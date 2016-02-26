@@ -1,7 +1,7 @@
 "use strict"
 
 
-myAdminApp.controller("HeaderCtrl" ,function ($scope, $translate) {
+app.controller("HeaderCtrl" ,function ($scope, $translate) {
   $scope.changeLanguage = function(key) {
       $translate.use(key)
   }
@@ -10,7 +10,7 @@ myAdminApp.controller("HeaderCtrl" ,function ($scope, $translate) {
   }
 })
 
-myAdminApp.controller("usersController" ,function ($scope, Users, DataUsers, $q) {
+app.controller("usersController" ,function ($scope, Users, DataUsers, $q) {
   var fetch = function() {
     Users.fetch().then(function(){
       $scope.users = Users.getUsers()
@@ -34,7 +34,7 @@ myAdminApp.controller("usersController" ,function ($scope, Users, DataUsers, $q)
   fetch()
 })
 
-myAdminApp.controller("editUserController" ,function ($scope, Users, $routeParams, $location) {
+app.controller("editUserController" ,function ($scope, Users, $routeParams, $location) {
   var key = $routeParams.id
   Users.fetchOne(key).then(function(){
     $scope.user = Users.getUser()
@@ -53,7 +53,7 @@ myAdminApp.controller("editUserController" ,function ($scope, Users, $routeParam
   }
 })
 
-myAdminApp.controller("addUserController" ,function ($scope, Users, $location) {
+app.controller("addUserController" ,function ($scope, Users, $location) {
   $scope.user = {}
   $scope.save = function() {
     Users.create($scope.user).then(function(resp){
@@ -62,7 +62,7 @@ myAdminApp.controller("addUserController" ,function ($scope, Users, $location) {
   }
 })
 
-myAdminApp.controller("userInfoController" ,function ($scope, Users, $routeParams) {
+app.controller("userInfoController" ,function ($scope, Users, $routeParams) {
   var key = $routeParams.id
   Users.fetchOne(key).then(function(){
     $scope.user = Users.getUser()

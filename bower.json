@@ -7,10 +7,13 @@
     "angular": "1.5.0",
     "angular-route": "~1.5.0",
     "angular-i18n": "~1.5.0",
-    "angular-cookies" : "~1.5.0",
-    "angular-translate" : "~2.9.1",
-    "angular-translate-storage-cookie" : "~2.9.1",
-    "angular-translate-loader-static-files" : "~2.9.1",
-    "ng-table": "~1.0.0"
+    "angular-cookies": "~1.5.0",
+    "angular-translate": "~2.9.1",
+    "angular-translate-storage-cookie": "~2.9.1",
+    "angular-translate-loader-static-files": "~2.9.1",
+    "ng-table": "~1.0.0",
+    "underscore": "~1.8.3",
+    "sockjs-client": "~1.0.3",
+    "stomp-websocket": "~2.3.4"
   }
 }

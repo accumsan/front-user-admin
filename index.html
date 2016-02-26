@@ -1,4 +1,4 @@
-<html ng-app="myAdminApp">
+<html ng-app="app">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -25,6 +25,7 @@
             <li><a href="#/home" translate="global.home">Home</a></li>
             <li><a href="#/users" translate="global.all">All users</a></li>
             <li><a href="#/comments">Comments</a></li>
+            <li><a href="#/chat">Chat</a></li>
             <li><a href="javascript:;" ng-click="changeLanguage('fr')">FR</a></li>
             <li><a href="javascript:;" ng-click="changeLanguage('en')">EN</a></li>
         </ul>
@@ -33,7 +34,7 @@
 
     </div>
     <hr />
-    <div class="container" ng-view>
+    <div ng-view>
     </div>
     <div class="footer"><hr /></div>
 </div>
@@ -46,6 +47,9 @@
 <script src="bower/angular-translate-storage-cookie/angular-translate-storage-cookie.min.js"></script>
 <script src="bower/angular-translate-loader-static-files/angular-translate-loader-static-files.min.js"></script>
 <script src="bower/ng-table/dist/ng-table.min.js"></script>
+<script src="bower/sockjs-client/dist/sockjs.min.js"></script>
+<script src="bower/stomp-websocket/lib/stomp.min.js"></script>
+<script src="bower/underscore/underscore-min.js"></script>
 
 <script type="text/javascript" src="js/app.js"></script>
 <script type="text/javascript" src="js/controllers.js"></script>
@@ -56,5 +60,7 @@
 <script type="text/javascript" src="partials/users/users.js"></script>
 <script type="text/javascript" src="partials/comments/controllers.js"></script>
 <script type="text/javascript" src="partials/comments/comments.js"></script>
+<script type="text/javascript" src="partials/messages/controllers.js"></script>
+<script type="text/javascript" src="partials/messages/messages.js"></script>
 </body>
 </html>

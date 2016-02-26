@@ -1,5 +1,5 @@
 "use strict";
-myAdminApp.factory('DataUsers', function() {
+app.factory('DataUsers', function() {
   return {
     get : function() {
       return [

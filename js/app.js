@@ -1,8 +1,8 @@
 "use strict";
 
-var myAdminApp = angular.module('myAdminApp', ['ngRoute', 'pascalprecht.translate', 'ngCookies', 'ngTable']);
+var app = angular.module('app', ['ngRoute', 'pascalprecht.translate', 'ngCookies', 'ngTable']);
 
-myAdminApp.config(['$routeProvider', '$translateProvider',
+app.config(['$routeProvider', '$translateProvider',
   function($routeProvider, $translateProvider) {
     $routeProvider
         .when('/home', {
@@ -26,6 +26,10 @@ myAdminApp.config(['$routeProvider', '$translateProvider',
         })
         .when('/comments', {
             templateUrl: 'partials/comments/comments.html'
+        })
+        .when('/chat', {
+            templateUrl: 'partials/messages/chat.html',
+            controller: 'ChatCtrl'
         })
         .when('/comments/:id', {
             templateUrl: 'partials/comments/room.html',

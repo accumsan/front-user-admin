@@ -1,4 +1,3 @@
-<div class="row">
     <div class="row col-md-2">
         <input type="text" class="form-control" placeholder="name" ng-model="name">
     </div>
@@ -7,16 +6,13 @@
     </div>
     <button ng-click="send()" class="btn btn-md btn-default">Send</button>
     <hr/>
-</div>
-<div class="row">
+
     <h4>Room {{id}}</h4>
     <table ng-table="ngTable" class="table table-striped" show-filter="true">
         <tbody>
         <tr ng-repeat="comment in $data">
-            <td title="'Name'" filter="{ name: 'text'}" sortable="'name'">{{comment.name}}</td>
-            <td title="'Date'" filter="{ date: 'text'}" sortable="'date'">{{comment.date}}</td>
-            <td title="'Message'" filter="{ message: 'text'}">{{comment.name}} : {{comment.message}}</td>
+            <td class="col-md-3" title="'Date'" filter="{ date: 'text'}" sortable="'date'">{{comment.date}}</td>
+            <td class="col-md-9" title="'Message'" filter="{ message: 'text'}">{{comment.name}} : {{comment.message}}</td>
         </tr>
         </tbody>
     </table>
-</div>

@@ -9,7 +9,7 @@
 </div>
 <div class="well well-sm">
 <p ng-repeat="message in messages | orderBy:'time':true" class="message">
-    <time>{{message.time | date:'HH:mm'}}</time>
-    <span ng-class="{self: message.self}">{{message.message}}</span>
+    <time ng-class="{'text-primary': message.self}">{{message.time | date:'HH:mm'}}</time>
+    <span ng-class="{'text-primary': message.self}">{{message.message}}</span>
 </p>
 </div>

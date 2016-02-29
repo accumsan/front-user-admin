@@ -1,6 +1,7 @@
 /.idea
 target/
 bower/
+.DS_Store
 pom.xml.tag
 pom.xml.releaseBackup
 pom.xml.versionsBackup

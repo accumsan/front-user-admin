@@ -4,3 +4,4 @@ unicode coding in i18n. Par exemple \u00E9 pour par exemple summer \u00E9t\u00E9
 ng table
 underscore js
 chat websocket
+Properties

@@ -7,7 +7,7 @@ app.service("Messages", function($q, $timeout) {
     var messageIds = []
 
     service.RECONNECT_TIMEOUT = 30000;
-    service.SOCKET_URL = "http://localhost:8080/chat";
+    service.SOCKET_URL = 'http://' + Properties.java_server + '/chat';
     service.CHAT_TOPIC = "/topic/message";
     service.CHAT_BROKER = "/app/chat";
     service.CHAT_RANDOM = "/app/random";

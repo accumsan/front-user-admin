@@ -1,6 +1,7 @@
 "use strict";
 
 var app = angular.module('app', ['ngRoute', 'pascalprecht.translate', 'ngCookies', 'ngTable']);
+var Properties = {}
 
 app.config(['$routeProvider', '$translateProvider',
   function($routeProvider, $translateProvider) {
@@ -45,3 +46,11 @@ app.config(['$routeProvider', '$translateProvider',
     $translateProvider.preferredLanguage('fr');
     $translateProvider.useCookieStorage();
 }]);
+
+
+app.run(function($http) {
+    $http.get('properties').then(function(response){
+        Properties.java_server = response.data.JAVA_SERVER
+        Properties.python_server = response.data.PYTHON_SERVER
+    })
+})

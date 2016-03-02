@@ -1,5 +1,5 @@
 {
-"JAVA_SERVER" : "http://localhost:8080",
+"JAVA_SERVER" : "https://localhost:8080",
 "JAVA_HOST" : "localhost:8080",
-"PYTHON_SERVER" : "localhost:5000"
+"PYTHON_SERVER" : "minhdd-py.herokuapp.com"
 }

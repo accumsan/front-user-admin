@@ -3,6 +3,8 @@
 app.controller("PythonCtrl" ,function ($scope, Python) {
     $scope.messages = [];
     //Use Websocket native
+    
+    Python.connect()
 
     $scope.sendMessage = function(message) {
        Python.send(message)

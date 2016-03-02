@@ -13,6 +13,10 @@ app.service("Python", function($q, $http) {
     service.receive = function() {
         return listener.promise;
     }
+    
+    service.connect = function() {
+        return $http.get(REST_URL)
+    }
 
     var initialize = function() {
         ws = new WebSocket(service.SOCKET_URL);

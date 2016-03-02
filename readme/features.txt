@@ -5,3 +5,4 @@ ng table
 underscore js
 chat websocket
 Properties
+python websockets communication

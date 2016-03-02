@@ -4,7 +4,7 @@ app.service("WsMessages", function($q) {
     var service = {}
     var listener = $q.defer()
     var ws
-    service.SOCKET_URL = 'ws://' + Properties.java_server + '/data';
+    service.SOCKET_URL = 'ws://' + Properties.java_host + '/data';
     service.RANDOM = 'random'
     service.random = function() {
         ws.send(service.RANDOM);

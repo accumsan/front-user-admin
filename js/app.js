@@ -55,6 +55,7 @@ app.config(['$routeProvider', '$translateProvider',
 app.run(function($http) {
     $http.get('properties').then(function(response){
         Properties.java_server = response.data.JAVA_SERVER
+        Properties.java_host = response.data.JAVA_HOST
         Properties.python_server = response.data.PYTHON_SERVER
     })
 })

@@ -1,7 +1,7 @@
 "use strict"
 
 app.factory("Users", function ($http) {
-    var API_USER = 'https://' + + Properties.java_server + +'/api/user'
+    var API_USER = Properties.java_server + '/api/user'
     var users = []
     var user
     return {

@@ -28,13 +28,17 @@ app.config(['$routeProvider', '$translateProvider',
         .when('/comments', {
             templateUrl: 'partials/comments/comments.html'
         })
+        .when('/comments/:id', {
+            templateUrl: 'partials/comments/room.html',
+            controller: 'CommentsCtrl'
+        })
         .when('/chat', {
             templateUrl: 'partials/messages/chat.html',
             controller: 'ChatCtrl'
         })
-        .when('/comments/:id', {
-            templateUrl: 'partials/comments/room.html',
-            controller: 'CommentsCtrl'
+        .when('/python', {
+            templateUrl: 'partials/python/python.html',
+            controller: 'PythonCtrl'
         })
         .otherwise({
             redirectTo: '/home'

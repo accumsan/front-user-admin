@@ -1,0 +1,5 @@
+{
+"JAVA_SERVER" : "https://minhdd-spring.herokuapp.com",
+"JAVA_HOST" : "minhdd-spring.herokuapp.com",
+"PYTHON_SERVER" : "minhdd-py.herokuapp.com"
+}

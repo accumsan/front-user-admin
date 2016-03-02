@@ -4,7 +4,7 @@ app.service("Python", function($q, $http) {
     var service = {}
     var listener = $q.defer()
     var ws
-    var REST_URL = 'http://' + Properties.java_server + '/api/python'
+    var REST_URL = 'https://' + Properties.java_server + '/api/python'
     service.SOCKET_URL = 'ws://' + Properties.java_server + '/python'
     
     service.send = function(message) {

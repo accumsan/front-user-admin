@@ -1,7 +1,7 @@
 "use strict"
 
 app.factory("Comments", function ($http) {
-    var API_COMMENT = 'http://' + Properties.java_server + '/comment'
+    var API_COMMENT = 'https://' + Properties.java_server + '/comment'
     return {
         subscribe : function(id, callback) {
             var eventSource = new EventSource(API_COMMENT + 's/' + id);

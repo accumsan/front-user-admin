@@ -5,6 +5,8 @@ app.service("Python", function($q, $http) {
     var listener = $q.defer()
     var ws
     var REST_URL = Properties.java_server + '/api/python'
+    var REST_URL_CONNECT_IN = REST_URL + '/connect/in'
+    var REST_URL_CONNECT_OUT = REST_URL + '/connect/out'
     service.SOCKET_URL = 'ws://' + Properties.java_host + '/python'
     
     service.send = function(message) {
@@ -15,7 +17,11 @@ app.service("Python", function($q, $http) {
     }
     
     service.connect = function() {
-        return $http.get(REST_URL)
+        $http.get(REST_URL_CONNECT_OUT).then(null, function(){
+            $http.get(REST_URL_CONNECT_OUT)
+        }, function() {
+            $http.get(REST_URL_CONNECT_IN)
+        })
     }
 
     var initialize = function() {
